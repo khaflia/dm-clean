@@ -130,7 +130,7 @@ function onVersionChange() {
   launchBtn.disabled = !selectedVersion;
 
   if (selectedVersion) {
-    launchText.textContent = 'Launch Discrub';
+    launchText.textContent = 'Open KBK Cleaner';
     hintText.textContent = '';
 
     // Restart countdown if returning user changed selection
@@ -164,11 +164,11 @@ function init() {
       selectedVersion = savedVersion;
       versionSelect.value = savedVersion;
       launchBtn.disabled = false;
-      hintText.textContent = 'Click the dropdown to switch versions';
+      hintText.textContent = 'Switch mode any time from the menu';
       startCountdown();
     } else {
       isFirstTime = true;
-      hintText.textContent = 'Select a version to get started';
+      hintText.textContent = 'Choose a workspace mode to continue';
       launchBtn.disabled = true;
     }
   });
