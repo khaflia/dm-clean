@@ -3,30 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Discrub Launcher</title>
+  <title>KBK Cleaner Launcher</title>
   <link rel="stylesheet" href="launcher.css" />
 </head>
 <body>
-  <div class="launcher">
-    <!-- Animated logo -->
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+  <div class="bg-orb orb-c"></div>
+
+  <main class="launcher" aria-label="KBK Cleaner launcher">
     <div class="logo-container">
       <div class="logo-glow"></div>
-      <img id="logo" class="logo" alt="Discrub" />
+      <img id="logo" class="logo" alt="KBK Cleaner" />
     </div>
 
-    <h1 class="title">Discrub</h1>
-    <p class="subtitle">Discord Data Management</p>
+    <p class="badge">New Branding</p>
+    <h1 class="title">KBK Cleaner</h1>
+    <p class="subtitle">Liquid Glass Workspace</p>
 
-    <!-- Version selector -->
     <div class="selector-container">
-      <label class="selector-label" for="version-select">Select version</label>
+      <label class="selector-label" for="version-select">Workspace mode</label>
       <div class="select-wrapper">
         <select id="version-select">
-          <option value="" disabled selected>Modern or Classic?</option>
-          <option value="web">Discrub v2.0.3</option>
-          <option value="classic">Discrub v1.12.11 (Classic)</option>
+          <option value="" disabled selected>Choose your mode</option>
+          <option value="web">KBK Cleaner 2.0.3 (Modern)</option>
+          <option value="classic">KBK Cleaner Legacy 1.12.11</option>
         </select>
-        <div class="select-arrow">
+        <div class="select-arrow" aria-hidden="true">
           <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
             <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -34,10 +37,9 @@
       </div>
     </div>
 
-    <!-- Launch button with progress bar -->
     <div class="launch-container">
       <button id="launch-btn" class="launch-btn" disabled>
-        <span id="launch-text" class="launch-text">Launch Discrub</span>
+        <span id="launch-text" class="launch-text">Open KBK Cleaner</span>
       </button>
       <div id="progress-bar" class="progress-bar-container">
         <div id="progress-fill" class="progress-bar-fill"></div>
@@ -46,7 +48,7 @@
     </div>
 
     <p class="hint-text" id="hint-text"></p>
-  </div>
+  </main>
 
   <script src="launcher.js"></script>
 </body>
